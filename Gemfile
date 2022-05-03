@@ -9,5 +9,5 @@ ruby '3.1.0'
 group :development do
   gem "sinatra"
   gem 'webrick'
-  gem 'sinatra-reloader'
+  gem 'sinatra-contrib'
 end

@@ -7,5 +7,9 @@ get '/' do
 end
 
 get '/secret' do
-  "This is a secret"
+  "This is a secret message"
+end
+
+get '/cat' do
+  File.read('cat.html')
 end
