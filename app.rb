@@ -11,5 +11,5 @@ get '/secret' do
 end
 
 get '/cat' do
-  File.read('cat.html')
+  erb(:index)
 end
