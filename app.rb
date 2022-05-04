@@ -3,7 +3,6 @@ require 'sinatra/reloader' if development?
 
 get '/' do
   "Hello World"
-  "Helo hello hello"
 end
 
 get '/secret' do
@@ -15,8 +14,12 @@ get '/random-cat' do
   erb(:index)
 end
 
-get '/named-cat' do
+post '/named-cat' do
   p params
   @name = params[:name]
   erb(:named_cat)
+end
+
+get '/form' do
+  erb(:form)
 end
