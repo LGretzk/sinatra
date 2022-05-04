@@ -11,3 +11,8 @@ group :development do
   gem 'webrick'
   gem 'sinatra-contrib'
 end
+
+group :test do
+  gem 'capybara'
+  gem 'webdrivers', '~> 5.0', require: false
+end
